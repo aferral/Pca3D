@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```sh
 python plot3d.py path/to/pickle.pkl
 ```
-Included an example pkl without images. To select a point just click and it should show the asociated image in the Tkinter window.
+Included an example pkl without images. To select a point just click and it should show the asociated image in the Tkinter window. To use with images check the variable imageFolder inside the pickle file.
 
 # Pickle format
 [x, y, listF, nLabels,imageFolder] = pickle.load(file)
