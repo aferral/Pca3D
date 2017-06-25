@@ -1,6 +1,11 @@
 # Pca3D
 Little script to show pca3D with images when you click on a point.
 
+# Installation
+```sh
+pip install -r /path/to/requirements.txt
+```
+
 # How to use
 
 ```sh
