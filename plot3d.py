@@ -84,17 +84,13 @@ if __name__ == '__main__':
     else:
         raise Exception("You must give arguments (python plot3d <picklePath> <Maxpoints>(Optional)  ). The pickle format is a list with [x(3D), y, fileListX, nLabels,whereImages]")
     print "About to use ",picklePath," ",limitPoints
-    #Cargar datos desde pickle
+
     with open(picklePath,'rb') as f:
         res = pickle.load(f)
         [x, y, listF, nLabels,imageFolder] = res
 
-    #TODO crear pickle de datos con createExp (crear carpeta)
-    #TODO crear un selector de cuantos puntos mostrar
 
     labels = [i for i in range(nLabels)]
-
-    #TODO Verificar carga de esta cosa (aguanta 10k puntos??)
 
     dictXYZ={}
     dictXYZname = {}
